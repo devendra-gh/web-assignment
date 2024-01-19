@@ -46,6 +46,11 @@ User can navigate to Dashboard and see all the user information
 ### `Push Notification`
 
 Implemented push notification with help of firebase
+sending notification Process:
+- Login firebase console [https://console.firebase.google.com/project/web-app-8c036/notification/compose]
+- Compose notification
+- Add Token
+- Send message
 
 ### `Multiple Regions`
 
@@ -77,7 +82,7 @@ Implemented JWT in both Backend and Frontend side
 
 # Server
 
-## `Mock Live API server`
+## `Mock Live API server with JWT`
 
 Implemented mock api server with the help of node.js, server endpoint [http://localhost:5050]
 
