@@ -2,7 +2,7 @@ import * as React from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 
-// import './firebase'; // TODO
+import './firebase';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { LOGIN_URL, DASHBOARD_URL } from "./utility/constant";

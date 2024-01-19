@@ -55,11 +55,11 @@ Implemented localization of USA, UAE, France and Germany
 
 Implemented direction bases on selected regions
 
-### `Theme`
+### `Theme Change`
 
 Implemented functionality to change theme and mode also
 
-### `Test coverage`
+### `Unit Test coverage`
 
 Implemented Test coverage 
 
