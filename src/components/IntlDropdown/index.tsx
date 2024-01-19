@@ -24,16 +24,38 @@ export const names: { [Key: string]: string }[] = [
   { lang: "fr", direction: "ltr" },
 ];
 
+export const Themes: any = {
+  "en": {
+    name: 'english',
+    palette: { primary: { main: "#1976d2" }, secondary: { main: "#769fc7" } },
+  },
+  "ae": {
+    name: 'arabic',
+    palette: { primary: { main: "#665a6f" }, secondary: { main: "#9986a7" } },
+  },
+  "de": {
+    name: 'german',
+    palette: { primary: { main: "#303f9f" }, secondary: { main: "#656ea8" } },
+  },
+  "fr": {
+    name: 'frence',
+    palette: { primary: { main: "#d32f2f" }, secondary: { main: "#d16d6d" } },
+  }
+}
+
+
 const MultipleSelectPlaceholder = () => {
   const intlContext = useContext(IntlContext);
   const [, setIsRtl] = useRTL();
   const { setLocale } = React.useContext(MUIWrapperContext);
+  const { updateTheme } = React.useContext(MUIWrapperContext);
 
   // ** Function to switch Language
   const handleChange = (event: SelectChangeEvent) => {
     const { target: { value } } = event;
 
     intlContext.switchLanguage(value);
+    updateTheme(Themes?.[value]);
 
     const _locale = names.find((name: { [Key: string]: string }) => name.lang === value);
     setLocale(_locale);

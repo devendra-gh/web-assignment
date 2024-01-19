@@ -80,9 +80,9 @@ const Header = ({ open, toggleDrawer }: { [Key: string]: any }) => {
                     </Badge>
                 </IconButton>
 
-                <Box ml={2}><ToggleMode /></Box>
-                <Box ml={2}><IconButton onClick={onHandleLogout} color="inherit"><LogoutIcon /></IconButton></Box>
-                <Box ml={2} textTransform="uppercase" title={auth?.email}><Avatar>{auth?.email?.charAt(0) || "-"}</Avatar></Box>
+                <Box ml={1}><ToggleMode /></Box>
+                <Box ml={1}><IconButton onClick={onHandleLogout} color="inherit"><LogoutIcon /></IconButton></Box>
+                <Box ml={1} textTransform="uppercase" title={auth?.email}><Avatar>{auth?.email?.charAt(0) || "-"}</Avatar></Box>
             </Toolbar>
         </AppBar >
     );

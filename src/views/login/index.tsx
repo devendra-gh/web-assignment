@@ -15,7 +15,6 @@ import { IntlContext } from '../../utility/context/Internationalization';
 const IntlDropdown = React.lazy(() => import('../../components/IntlDropdown'));
 const Loader = React.lazy(() => import('../../components/Loader'));
 const ToggleMode = React.lazy(() => import('../../components/ToggleMode'));
-const ThemeNavigation = React.lazy(() => import('../../components/ThemeNavigation'));
 const Signup = React.lazy(() => import('../../components/Signup'));
 
 interface IFormInputs {
@@ -102,7 +101,6 @@ const Login = () => {
             <Box mb={12} display="flex" alignItems="center" justifyContent="space-between" width="100%">
               <IntlDropdown />
               <Box display="flex" alignItems="center">
-                <Box ml={2}><ThemeNavigation /></Box>
                 <Box ml={2}><ToggleMode /></Box>
               </Box>
             </Box>
