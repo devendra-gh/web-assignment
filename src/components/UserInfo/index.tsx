@@ -7,7 +7,8 @@ import { useUserData } from '../../redux/storeConfig/states';
 const Title = React.lazy(() => import('../Title'));
 
 const UserInfo = () => {
-  const { auth } = useUserData();
+  const user = useUserData();
+  const auth = user?.auth || ""
 
   return (
     <React.Fragment>

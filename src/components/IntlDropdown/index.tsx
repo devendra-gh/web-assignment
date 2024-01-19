@@ -24,7 +24,7 @@ export const names: { [Key: string]: string }[] = [
   { lang: "fr", direction: "ltr" },
 ];
 
-export const Themes: any = {
+export const Themes: { [Key: string]: any } = {
   "en": {
     name: 'english',
     palette: { primary: { main: "#1976d2" }, secondary: { main: "#769fc7" } },
@@ -73,8 +73,8 @@ const MultipleSelectPlaceholder = () => {
           input={<OutlinedInput />}
           renderValue={() => (
             <Box display="flex" alignItems="center">
-              <ReactCountryFlag countryCode={intlContext.locale === 'en' ? 'us' : intlContext.locale} svg />
-              <Box mx={2}>{langTitles[intlContext.locale]}</Box>
+              <ReactCountryFlag countryCode={intlContext?.locale === 'en' ? 'us' : intlContext?.locale} svg />
+              <Box mx={2}>{langTitles[intlContext?.locale]}</Box>
             </Box>
           )}
         >

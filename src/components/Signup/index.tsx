@@ -31,7 +31,7 @@ const style = {
   p: 4,
 };
 
-const SignUp = ({ open, setOpen }: any) => {
+const SignUp = ({ open, setOpen }: { [Key: string]: any }) => {
   const intlContext = useContext(IntlContext);
   const dispatch = useDispatch<any>();
   const navigate = useNavigate();

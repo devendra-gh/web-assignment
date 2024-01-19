@@ -38,7 +38,8 @@ const AppBar = styled(MuiAppBar, {
 
 const Header = ({ open, toggleDrawer }: { [Key: string]: any }) => {
     const dispatch = useDispatch<any>();
-    const { auth } = useUserData();
+    const user = useUserData();
+    const auth = user?.auth || ""
 
     const onHandleLogout = () => {
         dispatch(handleLogout());

@@ -13,7 +13,7 @@ const firebaseConfig = {
 
 function requestPermission() {
     console.log("Requesting permission...");
-    Notification.requestPermission().then((permission) => {
+    Notification?.requestPermission().then((permission) => {
         if (permission === "granted") {
             console.log("Notification permission granted.");
             const app = initializeApp(firebaseConfig);
